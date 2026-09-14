@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#173d35">
+  <meta name="description" content="研迹 MedResearch：医学系统综述文献筛选与证据管理工作台">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>研迹 MedResearch</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">研</span><div><strong>研迹</strong><small>MedResearch</small></div></div>
+      <nav id="desktopNav" class="nav-list"></nav>
+      <div class="privacy-note">资料仅保存在当前浏览器<br>不会上传到服务器</div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div><p class="eyebrow">医学科研证据链工作台</p><h1 id="pageTitle">我的项目</h1></div>
+        <button id="projectSwitcher" class="project-switcher" type="button">尚未创建项目</button>
+      </header>
+      <section id="app" class="content" aria-live="polite"></section>
+    </main>
+    <nav id="mobileNav" class="mobile-nav"></nav>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <input id="restoreInput" type="file" accept="application/json,.json" hidden>
+  <script src="app.js" defer></script>
+</body>
+</html>
