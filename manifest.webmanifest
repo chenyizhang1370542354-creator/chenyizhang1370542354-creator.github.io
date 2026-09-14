@@ -1,0 +1,11 @@
+{
+  "name": "研迹 MedResearch",
+  "short_name": "研迹",
+  "description": "医学系统综述文献筛选与证据管理工作台",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f4",
+  "theme_color": "#173d35",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
