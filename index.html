@@ -4,9 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#173d35">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="description" content="研迹 MedResearch：医学系统综述文献筛选与证据管理工作台">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
   <title>研迹 MedResearch</title>
 </head>
@@ -20,7 +24,7 @@
     <main class="main-area">
       <header class="topbar">
         <div><p class="eyebrow">医学科研证据链工作台</p><h1 id="pageTitle">我的项目</h1></div>
-        <button id="projectSwitcher" class="project-switcher" type="button">尚未创建项目</button>
+        <div class="top-actions"><button id="installButton" class="btn secondary small" type="button" hidden>安装研迹</button><button id="projectSwitcher" class="project-switcher" type="button">尚未创建项目</button></div>
       </header>
       <section id="app" class="content" aria-live="polite"></section>
     </main>
